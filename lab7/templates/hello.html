@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet"
+          type="text/css" href="{{url_for('static', filename='demo7.css')}}"/>
+</head>
+<body>
+<h2>Pie Chart</h2>
+<svg id="myCircle1"></svg>
+<!--等下我要動態的插入js, 所以這裡要使用js的block-->
+{% block javascript %}
+<script type="text/javascript">
+    {% include "js/sample1.js" %}
+</script>
+{% endblock %}
+</body>
+</html>
